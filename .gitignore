@@ -1,0 +1,7 @@
+*
+!*.cpp
+!*.vcxproj
+!*.sln
+!.gitignore
+!readme.txt
+!UNLICENSE
