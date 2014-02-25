@@ -1,5 +1,3 @@
-// This is free and unencumbered software released into the public domain.
-
 #define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 
