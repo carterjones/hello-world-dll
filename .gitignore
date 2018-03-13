@@ -1,4 +1,5 @@
 *
+!appveyor.yml
 !*.cpp
 !*.vcxproj
 !*.sln

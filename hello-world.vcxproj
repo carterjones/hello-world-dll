@@ -26,6 +26,9 @@
     <RootNamespace>helloworld</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="PlatformToolset">
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
@@ -65,26 +68,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)$(Configuration)\x86-$(PlatformArchitecture)\</OutDir>
-    <IntDir>$(SolutionDir)$(Configuration)\x86-$(PlatformArchitecture)\Intermediate\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\x64\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\x64\Intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)$(Configuration)\x86-$(PlatformArchitecture)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IntDir>$(SolutionDir)$(Configuration)\x86-$(PlatformArchitecture)\Intermediate\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\x64\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\x64\Intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)\x86-$(PlatformArchitecture)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IntDir>$(SolutionDir)$(Configuration)\x86-$(PlatformArchitecture)\Intermediate\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\x86\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\x86\Intermediate\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)$(Configuration)\x86-$(PlatformArchitecture)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IntDir>$(SolutionDir)$(Configuration)\x86-$(PlatformArchitecture)\Intermediate\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\x86\</OutDir>
+    <IntDir>$(SolutionDir)$(Configuration)\x86\Intermediate\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

@@ -1,0 +1,21 @@
+build:
+  project: hello-world.vcxproj
+configuration: Release
+platform:
+  - x86
+  - x64
+after_build:
+  - ps: Move-Item "Release\${Env:Platform}\hello-world.dll" "hello-world-${Env:Platform}.dll"
+artifacts:
+  path: hello-world-$(PLATFORM).dll
+
+deploy:
+  description: ''
+  provider: GitHub
+  auth_token:
+    secure: 1aF/oIswswcQlEfgvM9XFLUOe/3r+9eXf/TWSMs0kBKpwHvNx1es9hUCzJ3MGrW/
+  artifact: hello-world-$(PLATFORM).dll
+  draft: false
+  prerelease: false
+  on:
+    appveyor_repo_tag: true
